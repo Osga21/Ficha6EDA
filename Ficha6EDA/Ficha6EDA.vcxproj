@@ -115,6 +115,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Amostra.h" />
+    <ClInclude Include="Hist.h" />
+    <ClInclude Include="janela.h" />
+    <ClInclude Include="ponto.h" />
+    <ClInclude Include="rectangulo.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Amostra.cpp" />
+    <ClCompile Include="janela.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Ponto.cpp" />
+    <ClCompile Include="rectangulo.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
