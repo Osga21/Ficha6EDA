@@ -23,7 +23,7 @@ bool Janela::Criar(const char* sTitulo,const char* sNome)
 	0, "minhaclasse", LoadIcon(0,IDI_APPLICATION) };
 	if (RegisterClassEx(&wndclass))
 	{ // Função do SO Windows que cria janelas
-		janelaId = CreateWindowEx(0, "minhaclasse", "titulo",
+		janelaId = CreateWindowEx(0, "minhaclasse", sTitulo,
 			WS_OVERLAPPEDWINDOW, CW_USEDEFAULT, CW_USEDEFAULT,
 			883, 566, 0, 0, GetModuleHandle(0), 0);
 		if (janelaId)

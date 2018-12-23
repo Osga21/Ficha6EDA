@@ -116,6 +116,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Amostra.h" />
+    <ClInclude Include="Circulo.h" />
     <ClInclude Include="Hist.h" />
     <ClInclude Include="janela.h" />
     <ClInclude Include="ponto.h" />
@@ -123,6 +124,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Amostra.cpp" />
+    <ClCompile Include="Circulo.cpp" />
     <ClCompile Include="janela.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Ponto.cpp" />
