@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "ponto.h"
+#include "math.h"
 class Circulo {
 private:
 	Ponto centro; // coordenadas do centro

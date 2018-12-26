@@ -42,3 +42,12 @@ void Circulo::desenhar(HWND janelaId, long cor)
 		ReleaseDC(janelaId, DrawHDC);
 	}
 }
+
+bool Circulo::contem(Ponto p)
+{
+	if (pow((p.ObterX() - centro.ObterX()), 2) + pow((p.ObterY() - centro.ObterY()), 2) <= pow(raio, 2))
+		return true;
+	else
+		return false;
+	
+}
