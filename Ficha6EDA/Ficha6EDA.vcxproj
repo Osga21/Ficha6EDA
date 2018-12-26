@@ -117,6 +117,7 @@
   <ItemGroup>
     <ClInclude Include="Amostra.h" />
     <ClInclude Include="Circulo.h" />
+    <ClInclude Include="Graph.h" />
     <ClInclude Include="Hist.h" />
     <ClInclude Include="janela.h" />
     <ClInclude Include="ponto.h" />
@@ -125,6 +126,8 @@
   <ItemGroup>
     <ClCompile Include="Amostra.cpp" />
     <ClCompile Include="Circulo.cpp" />
+    <ClCompile Include="Edge.cpp" />
+    <ClCompile Include="Graph.cpp" />
     <ClCompile Include="janela.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Ponto.cpp" />
