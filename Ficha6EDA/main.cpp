@@ -36,17 +36,17 @@ int main() {
 					local[i] = Circulo(coords[i],8,i);
 					local[i].desenhar(janelaId, DEFAULT);				
 				}
-
 				Graph grafo(npontos);
 				FILE *rede;
 				rede = fopen("Rede.txt","r");
+
 				if (rede == NULL)
 					exit(1);
-				int nedges=0;
-				fscanf(rede,"%d",nedges);
-				printf("%d",nedges);
+				
+				int nedges;
+				fscanf(rede,"%d",&nedges);
 				int startp, endp;
-				int dist;
+				float dist;
 				Edge buff;
 				Ponto temp;
 				for (int i = 0; i < nedges;i++) {
@@ -54,6 +54,7 @@ int main() {
 					dist=coords[startp].ObterDistancia(coords[endp]);
 					buff = Edge(startp,endp,dist);
 					grafo.InsertEdge(buff);
+					printf("Inserido %d -- %d dist=%f\n", startp, endp, dist);
 				}
 
 				if (janela.Click()) {
