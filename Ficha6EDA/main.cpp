@@ -85,7 +85,8 @@ int main() {
 									local[vert].desenhar(janelaId,SELECTED);
 									
 								}
-																
+								printf("\nDistancia de %d a %d:%.2f"
+									,firstvert,vert,coords[vert].ObterDistancia(coords[firstvert]));
 							}
 							grafo.Dijkstra(i);
 							firstvert = i;
