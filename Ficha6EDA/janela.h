@@ -1,6 +1,5 @@
 #pragma once
 #include <Windows.h>
-#include "Hist.h"
 #include "Ponto.h"
 #include "Rectangulo.h"
 class Janela {

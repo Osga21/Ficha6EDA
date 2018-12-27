@@ -36,7 +36,7 @@ void Circulo::desenhar(HWND janelaId, long cor)
 		SetBkMode(DrawHDC, TRANSPARENT);
 		SetTextColor(DrawHDC, RGB(0, 0, 0));
 		SetTextAlign(DrawHDC, TA_CENTER | TA_BOTTOM | TA_BASELINE);
-		TextOut(DrawHDC, centro.ObterX(), centro.ObterY(), str, strlen(str));
+		TextOut(DrawHDC, centro.ObterX(), centro.ObterY()+5, str, strlen(str));
 		DeleteObject(SelectObject(DrawHDC, hOPen));
 		DeleteObject(SelectObject(DrawHDC, hOldBrush));
 		ReleaseDC(janelaId, DrawHDC);

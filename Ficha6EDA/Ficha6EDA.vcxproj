@@ -115,17 +115,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Amostra.h" />
     <ClInclude Include="Circulo.h" />
     <ClInclude Include="Graph.h" />
-    <ClInclude Include="Hist.h" />
     <ClInclude Include="janela.h" />
     <ClInclude Include="Linha.h" />
     <ClInclude Include="ponto.h" />
     <ClInclude Include="rectangulo.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Amostra.cpp" />
     <ClCompile Include="Circulo.cpp" />
     <ClCompile Include="Edge.cpp" />
     <ClCompile Include="Graph.cpp" />
