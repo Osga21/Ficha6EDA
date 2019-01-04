@@ -80,9 +80,11 @@ int main() {
 							if (locselect == 2) {
 								printf("\nCaminho:");
 								vert = i;
+								float dist=0;
 								while (vert != firstvert) {
 									local[vert].desenhar(janelaId, SELECTED);
 									Linha(coords[vert], coords[grafo.PrevVert(vert)]).desenhar(janelaId, SELECTED);
+									dist += coords[vert].ObterDistancia(coords[grafo.PrevVert(vert)]);
 									vert = grafo.PrevVert(vert);
 
 									printf(" %d", vert);
@@ -92,9 +94,9 @@ int main() {
 								
 								char str[100];
 								sprintf_s(str, "Distancia de %d a %d: %.2f"
-									, firstvert, i, coords[i].ObterDistancia(coords[firstvert]));
+									, firstvert, i, dist);
 								printf("\nDistancia de %d a %d: %.2f"
-									,firstvert,i,coords[i].ObterDistancia(coords[firstvert]));
+									,firstvert,i,dist);
 
 								SetWindowTextA(janelaId,str);
 
